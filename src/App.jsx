@@ -35,7 +35,7 @@ import {
   Volume2,
 } from "lucide-react";
 
-const ACCENT = "#2FFFD0";
+const ACCENT = "#D6B35A";
 const CTA_DARK = "#06172E";
 
 const OUTER_GRADIENT =
