@@ -1113,7 +1113,7 @@ export default function QuranTranslationLandingPage() {
                 initial="hidden"
                 animate="show"
                 variants={fadeUp}
-                className="mt-5 max-w-2xl text-base leading-7 text-white/75 sm:text-lg sm:leading-8 lg:text-xl"
+                className="mt-2 sm:mt-5 max-w-2xl text-base leading-7 text-white/75 sm:text-lg sm:leading-8 lg:text-xl"
               >
                 Mga audio at visual na channel para sa mga pagsasalin ng kahulugan ng Quran sa
                 lahat ng pandaigdigang wika — isang waqf para sa Allah.
