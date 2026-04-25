@@ -1002,7 +1002,7 @@ export default function QuranTranslationLandingPage() {
     <LazyMotion features={domAnimation}>
       <div
         dir="ltr"
-        className="relative min-h-screen overflow-hidden bg-transparent text-white"
+        className="relative min-h-screen overflow-x-hidden overflow-y-visible bg-transparent text-white"
       >
         <div className={`absolute inset-0 ${PAGE_BACKGROUND_GRADIENT}`} />
 
@@ -1082,7 +1082,7 @@ export default function QuranTranslationLandingPage() {
             )}
           </header>
 
-          <section className="relative grid min-h-[auto] items-center gap-10 py-10 sm:gap-12 sm:py-14 lg:min-h-[84vh] lg:grid-cols-[1.05fr_0.95fr] lg:py-20">
+          <section className="relative z-20 grid min-h-[auto] overflow-visible items-center gap-10 py-10 sm:gap-12 sm:py-14 lg:min-h-[84vh] lg:grid-cols-[1.05fr_0.95fr] lg:py-20">
             <div className="order-1 lg:order-1">
               <motion.div
                 custom={0}
@@ -1101,9 +1101,9 @@ export default function QuranTranslationLandingPage() {
                 initial="hidden"
                 animate="show"
                 variants={fadeUp}
-                className="text-3xl font-black leading-[1.25] sm:text-5xl lg:text-7xl"
+                className="relative z-[9999] overflow-visible pb-4 pt-2 text-3xl font-black leading-[1.35] sm:text-5xl lg:text-7xl"
               >
-                <span className="block bg-gradient-to-l from-[#E0FFFF] via-[#FACC15] to-[#60A5FA] bg-clip-text text-transparent">
+                <span className="relative z-[9999] block overflow-visible pb-2 bg-gradient-to-l from-[#E0FFFF] via-[#FACC15] to-[#60A5FA] bg-clip-text text-transparent">
                   Mga Channel na Quraniko ng Sana
                 </span>
               </motion.h1>
