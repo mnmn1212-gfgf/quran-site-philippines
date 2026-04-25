@@ -1101,9 +1101,9 @@ export default function QuranTranslationLandingPage() {
                 initial="hidden"
                 animate="show"
                 variants={fadeUp}
-                className="relative z-[9999] overflow-visible pb-4 pt-2 text-3xl font-black leading-[1.35] sm:text-5xl lg:text-7xl"
+                className="relative z-[9999] overflow-visible pb-6 pt-2 text-3xl font-black leading-[1.5] sm:text-5xl lg:text-7xl"
               >
-                <span className="relative z-[9999] block overflow-visible pb-2 bg-gradient-to-l from-[#E0FFFF] via-[#FACC15] to-[#60A5FA] bg-clip-text text-transparent">
+                <span className="relative z-[9999] block overflow-visible pb-3 bg-gradient-to-l from-[#E0FFFF] via-[#FACC15] to-[#60A5FA] bg-clip-text text-transparent">
                   Mga Channel na Quraniko ng Sana
                 </span>
               </motion.h1>
