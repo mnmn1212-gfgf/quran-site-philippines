@@ -41,7 +41,7 @@ const CTA_DARK = "#06172E";
 const OUTER_GRADIENT =
   "bg-[linear-gradient(135deg,rgba(2,6,23,0.98)_0%,rgba(6,24,68,0.96)_32%,rgba(11,83,112,0.90)_66%,rgba(20,184,166,0.82)_100%)]";
 const PAGE_BACKGROUND_GRADIENT =
-  "bg-[linear-gradient(135deg,rgba(2,6,23,0.98)_0%,rgba(6,24,68,0.96)_32%,rgba(11,83,112,0.90)_66%,rgba(20,184,166,0.82)_100%)]";
+  "bg-[linear-gradient(180deg,rgba(2,6,23,0.98)_0%,rgba(6,24,68,0.96)_33.33%,rgba(11,83,112,0.90)_33.34%,rgba(11,83,112,0.90)_66.66%,rgba(20,184,166,0.82)_66.67%,rgba(20,184,166,0.82)_100%)]";
 const INNER_GRADIENT = OUTER_GRADIENT;
 
 const fadeUp = {
