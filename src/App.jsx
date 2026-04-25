@@ -20,19 +20,19 @@ import {
   MessageCircle,
   Mic2,
   MonitorPlay,
-  I-pause,
-  I-play,
+  Pause,
+  Play,
   Radio,
   RotateCcw,
   Send,
   ShieldCheck,
-  SkipBumalik,
-  SkipSumulong,
+  SkipBack,
+  SkipForward,
   Sparkles,
   Stars,
   Target,
   Users,
-  Tunog2,
+  Volume2,
 } from "lucide-react";
 
 const ACCENT = "#2FFFD0";
@@ -588,9 +588,9 @@ function HeroAudioPlayer({ isMobile }) {
           aria-label={isPlaying ? "I-pause" : "I-play"}
         >
           {isPlaying ? (
-            <I-pause className="h-4 w-4" style={{ color: ACCENT }} />
+            <Pause className="h-4 w-4" style={{ color: ACCENT }} />
           ) : (
-            <I-play className="h-4 w-4" style={{ color: ACCENT }} />
+            <Play className="h-4 w-4" style={{ color: ACCENT }} />
           )}
         </button>
 
@@ -600,7 +600,7 @@ function HeroAudioPlayer({ isMobile }) {
           className="flex h-10 w-10 items-center justify-center rounded-2xl border border-white/10 bg-white/5 text-white transition hover:bg-white/10"
           aria-label="Bumalik"
         >
-          <SkipBumalik className="h-4 w-4" style={{ color: ACCENT }} />
+          <SkipBack className="h-4 w-4" style={{ color: ACCENT }} />
         </button>
 
         <button
@@ -618,7 +618,7 @@ function HeroAudioPlayer({ isMobile }) {
           className="flex h-10 w-10 items-center justify-center rounded-2xl border border-white/10 bg-white/5 text-white transition hover:bg-white/10"
           aria-label="Ipasa"
         >
-          <SkipSumulong className="h-4 w-4" style={{ color: ACCENT }} />
+          <SkipForward className="h-4 w-4" style={{ color: ACCENT }} />
         </button>
 
         <button
@@ -627,7 +627,7 @@ function HeroAudioPlayer({ isMobile }) {
           className="flex h-10 w-10 items-center justify-center rounded-2xl border border-white/10 bg-white/5 text-white transition hover:bg-white/10"
           aria-label="Tunog"
         >
-          <Tunog2
+          <Volume2
             className={`h-4 w-4 ${muted ? "opacity-50" : ""}`}
             style={{ color: ACCENT }}
           />
@@ -898,7 +898,7 @@ function ProtectedHlsVideoCard({ video, index, isMobile }) {
             aria-label="I-play ang video"
           >
             <span className="flex h-16 w-16 items-center justify-center rounded-full border border-white/20 bg-white/10 backdrop-blur-md shadow-[0_0_28px_rgba(47,255,208,0.14)] sm:h-18 sm:w-18">
-              <I-play className="ml-1 h-7 w-7 text-white" />
+              <Play className="ml-1 h-7 w-7 text-white" />
             </span>
           </button>
         )}
@@ -916,7 +916,7 @@ function ProtectedHlsVideoCard({ video, index, isMobile }) {
             className="flex h-10 w-10 items-center justify-center rounded-2xl border border-white/10 bg-white/5 text-white transition hover:bg-white/10"
             aria-label="I-mute o ibalik ang tunog"
           >
-            <Tunog2
+            <Volume2
               className={`h-4 w-4 ${muted ? "opacity-50" : ""}`}
               style={{ color: ACCENT }}
             />
@@ -938,9 +938,9 @@ function ProtectedHlsVideoCard({ video, index, isMobile }) {
             aria-label={isPlaying ? "I-pause" : "I-play"}
           >
             {isPlaying ? (
-              <I-pause className="h-4 w-4" style={{ color: ACCENT }} />
+              <Pause className="h-4 w-4" style={{ color: ACCENT }} />
             ) : (
-              <I-play className="h-4 w-4" style={{ color: ACCENT }} />
+              <Play className="h-4 w-4" style={{ color: ACCENT }} />
             )}
           </button>
 
@@ -1146,7 +1146,7 @@ export default function QuranTranslationLandingPage() {
                   rel="noreferrer"
                   className="inline-flex items-center justify-center gap-3 rounded-2xl border border-white/15 bg-white/10 px-6 py-3.5 text-sm font-semibold text-white backdrop-blur-md transition hover:border-[#2FFFD0]/20 hover:bg-white/15 sm:px-7 sm:py-4 sm:text-base"
                 >
-                  <I-play className="h-5 w-5" />
+                  <Play className="h-5 w-5" />
                   Bisitahin ang Aming Channel
                 </a>
               </motion.div>
@@ -1744,7 +1744,7 @@ export default function QuranTranslationLandingPage() {
                             <GooglePlayIcon />
                           </div>
                           <span className="whitespace-nowrap text-sm font-bold text-white sm:text-base">
-                            Google I-play
+                            Google Play
                           </span>
                         </div>
                       </a>
