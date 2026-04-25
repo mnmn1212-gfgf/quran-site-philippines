@@ -40,6 +40,8 @@ const CTA_DARK = "#06172E";
 
 const OUTER_GRADIENT =
   "bg-[linear-gradient(135deg,rgba(2,6,23,0.98)_0%,rgba(6,24,68,0.96)_32%,rgba(11,83,112,0.90)_66%,rgba(20,184,166,0.82)_100%)]";
+const PAGE_BACKGROUND_GRADIENT =
+  "bg-[linear-gradient(135deg,rgba(2,6,23,0.98)_0%,rgba(6,24,68,0.96)_32%,rgba(11,83,112,0.90)_66%,rgba(20,184,166,0.82)_100%)]";
 const INNER_GRADIENT = OUTER_GRADIENT;
 
 const fadeUp = {
@@ -1002,12 +1004,12 @@ export default function QuranTranslationLandingPage() {
         dir="ltr"
         className="relative min-h-screen overflow-hidden bg-transparent text-white"
       >
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(47,255,208,0.18),transparent_30%),radial-gradient(circle_at_80%_18%,rgba(250,204,21,0.14),transparent_25%),radial-gradient(circle_at_18%_80%,rgba(96,165,250,0.16),transparent_28%),linear-gradient(180deg,#020617_0%,#061844_42%,#021F2D_100%)]" />
+        <div className={`absolute inset-0 ${PAGE_BACKGROUND_GRADIENT}`} />
 
         {!isMobile && (
           <>
             <motion.div
-              className="absolute -top-24 left-1/2 h-96 w-96 -translate-x-1/2 rounded-full bg-[#2FFFD0]/12 blur-3xl"
+              className="absolute -top-24 left-1/2 h-96 w-96 -translate-x-1/2 rounded-full bg-[rgba(20,184,166,0.14)] blur-3xl"
               animate={pulseGlow}
             />
             <div className="absolute inset-0 opacity-[0.06]">
@@ -1349,7 +1351,7 @@ export default function QuranTranslationLandingPage() {
               className={`relative overflow-hidden p-5 sm:p-6 md:p-10 ${gradientOuterCard}`}
             >
               {!isMobile && (
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(47,255,208,0.08),transparent_28%),radial-gradient(circle_at_80%_80%,rgba(250,204,21,0.06),transparent_32%)]" />
+                <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(2,6,23,0.14)_0%,rgba(6,24,68,0.12)_32%,rgba(11,83,112,0.10)_66%,rgba(20,184,166,0.08)_100%)]" />
               )}
 
               <div className="relative z-10">
@@ -1654,7 +1656,7 @@ export default function QuranTranslationLandingPage() {
                       Sana... Isang Mensahe para sa Lahat ng Mundo
                     </div>
 
-                    <p className="mx-auto mt-4 max-w-xl rounded-[1.4rem] border border-[#2FFFD0]/20 bg-[linear-gradient(135deg,rgba(17,24,39,0.74)_0%,rgba(30,41,59,0.68)_100%)] px-4 py-4 text-sm leading-7 text-white/90 sm:px-5 sm:text-base sm:leading-8">
+                    <p className="mx-auto mt-4 max-w-xl rounded-[1.4rem] border border-[#2FFFD0]/20 bg-[linear-gradient(135deg,rgba(2,6,23,0.74)_0%,rgba(6,24,68,0.68)_32%,rgba(11,83,112,0.54)_66%,rgba(20,184,166,0.38)_100%)] px-4 py-4 text-sm leading-7 text-white/90 sm:px-5 sm:text-base sm:leading-8">
                       Mga audio at visual na channel para sa mga pagsasalin ng kahulugan ng Quran
                       sa lahat ng pandaigdigang wika, bilang proyektong waqf na pinagsasama ang
                       ganda ng presentasyon, katumpakan ng kahulugan, at katapatan ng mensahe.
@@ -1678,7 +1680,7 @@ export default function QuranTranslationLandingPage() {
                   <div className="w-full space-y-4 text-white/72 flex flex-col items-center">
                     <a
                       href="mailto:snachannel159@gmail.com"
-                      className="flex w-full items-center justify-center gap-3 break-all rounded-2xl border border-white/10 bg-[rgba(17,24,39,0.50)] px-4 py-3 text-sm text-center transition hover:bg-white/10 sm:text-base"
+                      className="flex w-full items-center justify-center gap-3 break-all rounded-2xl border border-white/10 bg-[rgba(6,24,68,0.50)] px-4 py-3 text-sm text-center transition hover:bg-white/10 sm:text-base"
                     >
                       <Mail
                         className="h-5 w-5 shrink-0"
@@ -1687,7 +1689,7 @@ export default function QuranTranslationLandingPage() {
                       <span className="text-center">snachannel159@gmail.com</span>
                     </a>
 
-                    <div className="flex w-full items-center justify-center gap-3 rounded-2xl border border-white/10 bg-[rgba(17,24,39,0.50)] px-4 py-3 text-sm text-center sm:text-base">
+                    <div className="flex w-full items-center justify-center gap-3 rounded-2xl border border-white/10 bg-[rgba(6,24,68,0.50)] px-4 py-3 text-sm text-center sm:text-base">
                       <MapPin
                         className="h-5 w-5 shrink-0"
                         style={{ color: ACCENT }}
